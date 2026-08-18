@@ -170,6 +170,12 @@
   .quad-card li.na::after{content:"◦ not applicable to profile"; display:block; font-size:10px; color:var(--ink-500); font-style:italic; margin-top:3px; font-family:var(--mono);}
   .src-link{display:inline-flex; align-items:center; gap:4px; font-family:var(--mono); font-size:10.5px; color:var(--link); margin-left:6px; border-bottom:1px dotted var(--link); white-space:nowrap;}
   .src-link::before{content:"↗";}
+  /* Clause-level "unverified — pending review" status flag. Reusable on any
+     clause (in place of a .src-link) whose primary source could not be
+     verified — see /verification/log.md. Uses the --warn token; deliberately
+     NOT styled like a citation so it never reads as a working source link. */
+  .unverified{display:inline-flex; align-items:center; gap:5px; margin-left:6px; padding:1px 7px; border:1px solid var(--warn); border-radius:2px; background:var(--warn-dim); color:var(--warn); font-family:var(--mono); font-size:10px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; white-space:nowrap;}
+  .unverified::before{content:"⚠";}
   body.profile-inactive .quad-card li.na{opacity:1;}
   body.profile-inactive .quad-card li.na::after{display:none;}
 
@@ -583,7 +589,7 @@
                   <a class="src-link" href="https://www.legislation.gov.uk/uksi/2002/618/contents" target="_blank" rel="noopener">legislation.gov.uk</a>
                 </li>
                 <li>MHRA guidance on medical device cybersecurity sets premarket and lifecycle expectations aligned to, but distinct from, EU MDCG 2019-16.
-                  <a class="src-link" href="https://www.gov.uk/government/publications/medical-devices-cyber-security" target="_blank" rel="noopener">gov.uk MHRA guidance</a>
+                  <span class="unverified">Unverified — pending review</span>
                 </li>
                 <li>NHS-deployed software additionally falls under the DCB0129 (manufacturer) / DCB0160 (deploying organisation) clinical safety standards.
                   <a class="src-link" href="https://digital.nhs.uk/data-and-information/information-standards" target="_blank" rel="noopener">NHS Digital standards</a>
@@ -594,7 +600,7 @@
               <h4>02 · Premarket requirements</h4>
               <ul>
                 <li>Secure by design expectations mirror EU GSPR 17.2/17.4 in substance; manufacturer must document IT environment assumptions and security controls.
-                  <a class="src-link" href="https://www.gov.uk/government/publications/medical-devices-cyber-security" target="_blank" rel="noopener">gov.uk MHRA guidance</a>
+                  <span class="unverified">Unverified — pending review</span>
                 </li>
                 <li>Risk management integrated with ISO 14971; DCB0129 requires a Clinical Safety Case Report and Hazard Log for health IT manufacturers.
                   <a class="src-link" href="https://digital.nhs.uk/data-and-information/information-standards" target="_blank" rel="noopener">DCB0129</a>
@@ -631,7 +637,7 @@
             <h4>Primary sources — United Kingdom</h4>
             <div class="ref-list">
               <div class="ref-item"><div><span class="ref-name">UK Medical Devices Regulations 2002</span><span class="ref-code">SI 2002/618, as amended</span></div><a href="https://www.legislation.gov.uk/uksi/2002/618/contents" target="_blank" rel="noopener">legislation.gov.uk ↗</a></div>
-              <div class="ref-item"><div><span class="ref-name">MHRA medical device cybersecurity guidance</span><span class="ref-code">gov.uk</span></div><a href="https://www.gov.uk/government/publications/medical-devices-cyber-security" target="_blank" rel="noopener">gov.uk ↗</a></div>
+              <div class="ref-item"><div><span class="ref-name">MHRA medical device cybersecurity guidance</span><span class="ref-code">gov.uk</span></div><span class="unverified">Unverified — pending review</span></div>
               <div class="ref-item"><div><span class="ref-name">DCB0129 / DCB0160</span><span class="ref-code">NHS Digital clinical safety standards</span></div><a href="https://digital.nhs.uk/data-and-information/information-standards" target="_blank" rel="noopener">NHS Digital ↗</a></div>
               <div class="ref-item"><div><span class="ref-name">Software and AI as a Medical Device Programme</span><span class="ref-code">MHRA</span></div><a href="https://www.gov.uk/government/publications/software-and-ai-as-a-medical-device-change-programme" target="_blank" rel="noopener">gov.uk ↗</a></div>
               <div class="ref-item"><div><span class="ref-name">NCSC supply chain security guidance</span><span class="ref-code">National Cyber Security Centre</span></div><a href="https://www.ncsc.gov.uk/collection/supply-chain-security" target="_blank" rel="noopener">ncsc.gov.uk ↗</a></div>
