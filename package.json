@@ -1,7 +1,7 @@
 {
   "name": "cybercompass",
   "productName": "CyberCompass",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "CyberCompass — Medtech Cybersecurity Requirements Navigator (offline desktop wrapper of the same index.html served on the web).",
   "author": "Rajeev Yadav <rajeevyadav@gmail.com>",
   "license": "MIT",
