@@ -187,7 +187,7 @@ were browser-confirmed by page title.
 | JP-01.2 | JP | MHLW/PMDA cyber notifications, IMDRF-aligned | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-02.1 | JP | Cyber risk assessment integrated with ISO 14971 | iso.org 14971 | 2026-08-18 | RY | OK¹ |
 | JP-02.2 | JP | Reference IMDRF N60 principles for premarket controls | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
-| JP-03.1 | JP | Software-component inventory per IMDRF SBOM principles | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
+| JP-03.1 | JP | Software-component inventory per IMDRF SBOM principles | imdrf.org N73 PDF | 2026-08-18 | RY | OK² |
 | JP-03.2 | JP | JPCERT/CC coordinates vuln disclosure with MHLW/PMDA | jpcert.or.jp | 2026-08-18 | RY | OK |
 | JP-04.1 | JP | Cyber incident reporting under PMD Act adverse-event framework | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-04.2 | JP | Postmarket vuln monitoring/patching per MHLW/PMDA notifications | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
@@ -224,7 +224,7 @@ PDF URL is IMDRF's canonical final-document path, browser-resolvable.
 | CN-01.1 | CN | Regulations on Supervision & Admin of Medical Devices (NMPA) | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
 | CN-01.2 | CN | NMPA Guiding Principles for Cybersecurity Registration Review | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
 | CN-02.1 | CN | Cyber technical documentation at registration | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
-| CN-02.2 | CN | Cyber risk analysis referencing "GB/T 42062" alongside ISO 14971 | iso.org 14971 | 2026-08-18 | RY | FLAG |
+| CN-02.2 | CN | Cyber risk analysis integrated with ISO 14971 (GB/T 42062 removed, D-006 §1) | iso.org 14971 | 2026-08-18 | RY | OK² |
 | CN-02.3 | CN | AI/SaMD devices under NMPA AI review pathway | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
 | CN-02.4 | CN | PIPL + cross-border data transfer for health data | cac.gov.cn | 2026-08-18 | RY | OK |
 | CN-03.1 | CN | Software component inventory in registration dossier | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
@@ -281,7 +281,7 @@ software-based medical devices", "Report an adverse event or safety problem").
 | KR-01.1 | KR | Medical Devices Act (MFDS) | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
 | KR-01.2 | KR | MFDS cybersecurity review guidance, IMDRF-aligned | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
 | KR-02.1 | KR | Cyber risk assessment + security architecture for connected approvals | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
-| KR-02.2 | KR | ISO 14971 + IMDRF principles for evaluation consistency | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| KR-02.2 | KR | ISO 14971 + IMDRF principles for evaluation consistency | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 | KR-02.3 | KR | AI/SaMD under MFDS digital medical device pathway | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
 | KR-03.1 | KR | Software-component inventory for third-party/OSS | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
 | KR-03.2 | KR | Vulnerability coordination via KISA | kisa.or.kr | 2026-08-18 | RY | OK |
@@ -289,7 +289,7 @@ software-based medical devices", "Report an adverse event or safety problem").
 | KR-04.2 | KR | Monitoring + patch management for connected devices | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
 | KR-R1 | KR | Ministry of Food and Drug Safety (MFDS) | mfds.go.kr | 2026-08-18 | RY | OK |
 | KR-R2 | KR | Korea Internet & Security Agency (KISA) | kisa.or.kr | 2026-08-18 | RY | OK |
-| KR-R3 | KR | IMDRF cybersecurity principles N60 / N70 | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| KR-R3 | KR | IMDRF cybersecurity principles N60 / N70 | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 
 **South Korea summary:** 12 items — 10 OK, 2 OK¹ (IMDRF index, anti-bot shell to
 automated tools, browser-resolvable). 0 broken links, 0 UNVERIFIED, 0 pulled.
@@ -308,7 +308,7 @@ not changed (D-005 §2 scoped the repoint to JP only).
 | SG-01.1 | SG | Health Products Act + Medical Devices Regulations (HSA) | hsa.gov.sg | 2026-08-18 | RY | OK |
 | SG-01.2 | SG | HSA guidance docs (incl. cybersecurity), IMDRF-aligned | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
 | SG-02.1 | SG | Cyber risk documentation for connected devices in dossier | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
-| SG-02.2 | SG | ISO 14971 + IMDRF cybersecurity principles | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| SG-02.2 | SG | ISO 14971 + IMDRF cybersecurity principles | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 | SG-02.3 | SG | Standalone software/AI under HSA SaMD guidance | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
 | SG-03.1 | SG | Software-component inventory for third-party/OSS | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
 | SG-03.2 | SG | Vulnerability disclosure via SingCERT | csa.gov.sg/singcert | 2026-08-18 | RY | OK |
@@ -357,25 +357,23 @@ curl but resolves in a browser.
 | Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
 |---|---|---|---|---|---|---|
 | IN-01.1 | IN | Medical Devices Rules, 2017 (CDSCO) | cdsco.gov.in | 2026-08-18 | RY | OK |
-| IN-01.2 | IN | Cyber expectations emerging; CDSCO references IMDRF | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| IN-01.2 | IN | Cyber expectations emerging; CDSCO references IMDRF | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 | IN-02.1 | IN | ISO 14971-aligned risk mgmt in device master file | iso.org 14971 | 2026-08-18 | RY | OK¹ |
 | IN-02.2 | IN | SaMD classification under Medical Devices Rules, 2017 | cdsco.gov.in | 2026-08-18 | RY | OK |
 | IN-02.3 | IN | Connected devices document data security; guidance developing | cdsco.gov.in | 2026-08-18 | RY | OK |
 | IN-03.1 | IN | No dedicated SBOM mandate yet; reuse FDA/EU inventory | cdsco.gov.in | 2026-08-18 | RY | OK |
 | IN-03.2 | IN | Vulnerability coordination via CERT-In | cert-in.org.in | 2026-08-18 | RY | OK |
-| IN-04.1 | IN | MvPI adverse-event reporting covers cyber safety events | cdsco.gov.in (404) | 2026-08-18 | RY | FLAG |
+| IN-04.1 | IN | MvPI adverse-event reporting covers cyber safety events | ipc.gov.in MvPI | 2026-08-18 | RY | FIXED |
 | IN-04.2 | IN | Health-data devices must account for DPDP Act 2023 | meity.gov.in | 2026-08-18 | RY | OK |
 | IN-R1 | IN | Medical Devices Rules, 2017 (CDSCO) | cdsco.gov.in | 2026-08-18 | RY | OK |
-| IN-R2 | IN | Materiovigilance Programme of India (MvPI) | cdsco.gov.in (404) | 2026-08-18 | RY | FLAG |
+| IN-R2 | IN | Materiovigilance Programme of India (MvPI) — IPC NCC | ipc.gov.in MvPI | 2026-08-18 | RY | FIXED |
 | IN-R3 | IN | CERT-In (national CERT) | cert-in.org.in | 2026-08-18 | RY | OK |
 | IN-R4 | IN | Digital Personal Data Protection Act, 2023 (MeitY) | meity.gov.in | 2026-08-18 | RY | OK |
 
-**India summary:** 13 items — 9 OK, 2 OK¹ (IMDRF index + ISO 14971), 2 FLAG
-(MvPI link 404, IN-04.1 / IN-R2). 0 UNVERIFIED, 0 pulled. cdsco.gov.in
-(medical devices), cert-in.org.in and meity.gov.in return 200. India's clause
-text is appropriately hedged ("lighter and still emerging", "no dedicated SBOM
-mandate yet", "still developing"), which verifies as accurate. Same optional
-IMDRF-index repoint note (IN-01.2) as JP/KR/SG.
+**India summary (updated D-006):** 13 items — 9 OK, 1 OK¹ (ISO 14971),
+1 OK² (IN-01.2 IMDRF repointed to N60 PDF), 2 FIXED (IN-04.1/IN-R2 MvPI
+repointed to the IPC page). 0 FLAG, 0 UNVERIFIED, 0 pulled. cdsco.gov.in,
+cert-in.org.in, meity.gov.in and ipc.gov.in all resolve 200.
 
 ---
 
@@ -392,6 +390,14 @@ IMDRF-index repoint note (IN-01.2) as JP/KR/SG.
 | AU TGA reporting (×1) | tga.gov.au/safety/safety-monitoring-and-signals/reporting-problems | tga.gov.au/safety/report-problem/report-adverse-event-or-safety-problem | TGA site restructure; current report-a-problem page |
 | SG HSA safety (SG-04.1) | hsa.gov.sg/medical-devices/safety-information | hsa.gov.sg/medical-devices/adverse-events | HSA retired the safety-information slug; current medical-device adverse-events reporting page |
 | BR Notivisa (×2: BR-04.1, BR-R3) | gov.br/anvisa/pt-br/sistemas/notivisa | gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/notificacoes/e-notivisa | ANVISA retired the /sistemas/notivisa path; current e-Notivisa page (browser title "e-Notivisa") |
+| IN MvPI (×2: IN-04.1, IN-R2) — D-006 §2 | cdsco.gov.in/opencms/opencms/en/Materiovigilance/ | ipc.gov.in/mandates/materiovigilance-programme-of-india-mvpi/about-us.html | MvPI's National Coordination Centre is IPC (not CDSCO); repointed to the actual owning authority per Director option (a) |
+
+### IMDRF repoints (index → specific PDF; D-005 §2 + D-006 §3)
+
+| Where | From | To | Reason |
+|---|---|---|---|
+| JP-02.2, JP-R3 (D-005) · KR-02.2/R3, SG-02.2, IN-01.2, standards card (D-006) | imdrf.org/documents (index) | imdrf.org/…/imdrf-tech-200318-pp-mdc-n60.pdf (N60 final PDF) | Specific document instead of the documents index |
+| JP-03.1 (D-006) | (was N60 PDF) | imdrf.org/…/…SBOM…(N73).pdf | N73 is the SBOM-specific IMDRF doc — more precise for this SBOM clause than N60 |
 
 ---
 
@@ -454,6 +460,13 @@ cyber-specific standard is a different one (e.g. the YY/T network-security
 series). Recommend Director confirm and either correct the description or swap
 to the correct standard number. Not changed unilaterally (substantive citation).
 
+> **✅ RESOLVED under D-006 §1.** Per Director: GB/T 42062 removed as a cyber
+> citation (it is the ISO 14971 risk-management adoption); CN-02.2 now cites
+> **ISO 14971 alone**. No substitute GB/T number was guessed. **Outstanding:** a
+> dedicated Chinese cybersecurity-specific standard citation (e.g. a YY/T
+> network-security standard) is still not identified — left for a future
+> directive if/when confirmed. Status → OK².
+
 **IN — MvPI link 404 (IN-04.1, IN-R2): FLAG, awaiting Director decision.** The
 Materiovigilance Programme of India links point to
 `cdsco.gov.in/opencms/opencms/en/Materiovigilance/`, which now returns 404.
@@ -467,6 +480,12 @@ unilaterally. The programme and the claim remain valid; only the link needs a
 decision. Options: (a) repoint to the IPC MvPI page, (b) repoint to the NHSRC
 MvPI page, (c) mark "unverified — pending review" via the badge. Held for
 Director.
+
+> **✅ RESOLVED under D-006 §2: option (a).** Both MvPI links repointed to the
+> IPC MvPI page (`ipc.gov.in/mandates/materiovigilance-programme-of-india-mvpi/
+> about-us.html`, 200, title "About Us - Indian Pharmacopoeia Commission").
+> Clause text and IN-R2 ref-code updated to frame IPC as the National
+> Coordination Centre (the actual owner of this obligation). Status → FIXED.
 
 ---
 
@@ -485,14 +504,27 @@ Director.
 - [x] IN module — verified & logged (2 FLAG: MvPI link 404 / authority change)
 - [x] **ALL 11 JURISDICTIONS VERIFIED & LOGGED** (D-005 §3 complete)
 
-## Open flags awaiting Director decision (as of all-11 completion)
+## Open flags (status after D-006)
 
-- **CN-02.2** — "GB/T 42062 (medical device cybersecurity)" mis-described (it is
-  the ISO 14971 risk-management adoption). Correct description or swap standard.
-- **IN-04.1 / IN-R2** — MvPI link 404; correct home is IPC/NHSRC (different
-  authority). Choose repoint target or badge as unverified.
-- **UK-01.2 / UK-02.1 / UK-R2** — remain UNVERIFIED (dead MHRA guidance);
-  already badged on the live page per D-004 §1 / D-005 §1.
-- **Optional (non-blocking):** repoint remaining IMDRF-index links (KR-02.2/R3,
-  SG-02.2, IN-01.2, plus the cross-cutting standards card) to the specific N60
-  PDF as done for JP; and JP precision notes (N73 for SBOM, N70 for legacy).
+- **CN-02.2** — ✅ RESOLVED (D-006 §1): GB/T 42062 removed, ISO 14971 alone.
+  _Residual note:_ a dedicated Chinese cyber-specific standard citation is still
+  unidentified — future directive if confirmed.
+- **IN-04.1 / IN-R2** — ✅ RESOLVED (D-006 §2, option a): repointed to IPC MvPI.
+- **IMDRF index repoints** — ✅ DONE (D-006 §3): KR-02.2/R3, SG-02.2, IN-01.2 and
+  the standards card → N60 PDF; JP-03.1 → N73 PDF. N70 intentionally unlinked
+  (no clean jurisdictional home).
+- **UK-01.2 / UK-02.1 / UK-R2** — remain UNVERIFIED (dead MHRA guidance); badged
+  on the live page per D-004 §1 / D-005 §1. No open decision (revisit if MHRA
+  publishes stable guidance).
+
+**No open citation/link flags remain.** All 11 jurisdictions verified; only the
+UK MHRA items stay UNVERIFIED-by-design (badged).
+
+---
+
+## Next scheduled review
+
+**Due: 2026-11-18** (quarterly cadence per D-006 §5). See [NEXT_REVIEW.md](../NEXT_REVIEW.md)
+and the tracking GitHub issue. Lighter pass: link-check + regulatory-change
+awareness for all 11 jurisdictions; any finding is directive-gated (no silent
+patches).
