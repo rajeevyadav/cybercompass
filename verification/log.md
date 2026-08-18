@@ -179,6 +179,35 @@ were browser-confirmed by page title.
 
 ---
 
+## Japan — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| JP-01.1 | JP | PMD Act; MHLW policy, PMDA review | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
+| JP-01.2 | JP | MHLW/PMDA cyber notifications, IMDRF-aligned | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
+| JP-02.1 | JP | Cyber risk assessment integrated with ISO 14971 | iso.org 14971 | 2026-08-18 | RY | OK¹ |
+| JP-02.2 | JP | Reference IMDRF N60 principles for premarket controls | imdrf.org (index) | 2026-08-18 | RY | OK |
+| JP-03.1 | JP | Software-component inventory per IMDRF SBOM principles | imdrf.org (index) | 2026-08-18 | RY | OK |
+| JP-03.2 | JP | JPCERT/CC coordinates vuln disclosure with MHLW/PMDA | jpcert.or.jp | 2026-08-18 | RY | OK |
+| JP-04.1 | JP | Cyber incident reporting under PMD Act adverse-event framework | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
+| JP-04.2 | JP | Postmarket vuln monitoring/patching per MHLW/PMDA notifications | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
+| JP-R1 | JP | PMD Act (MHLW / PMDA) | pmda.go.jp | 2026-08-18 | RY | OK |
+| JP-R2 | JP | PMDA device review services | pmda.go.jp | 2026-08-18 | RY | OK |
+| JP-R3 | JP | IMDRF cybersecurity principles N60 / N70 | imdrf.org (index) | 2026-08-18 | RY | OK |
+| JP-R4 | JP | JPCERT/CC | jpcert.or.jp | 2026-08-18 | RY | OK |
+
+**Japan summary:** 12 items — 11 OK, 1 OK¹ (ISO 14971, CDN-blocked canonical).
+0 broken links, 0 citation errors, 0 UNVERIFIED, 0 pulled. All PMDA/JPCERT/
+IMDRF URLs resolve (pmda.go.jp and jpcert.or.jp 200; imdrf.org browser-
+confirmed — blocks curl). PMDA and IMDRF links are portal/index pages, which
+is acceptable per D-001 §6 (Japan publishes no single stable English cyber
+document). **Optional precision note (not a blocker):** the IMDRF **N60/N70**
+guidance documents do have specific stable PDF URLs; JP-02.2/03.1/R3 could be
+repointed from the documents index to those exact PDFs on request — flagged,
+not changed unilaterally.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -249,4 +278,5 @@ UNVERIFIED for the separate dead-link issue above.)
 - [x] EU module — verified & logged (commit `9fbc725`); citation fix `f6e34d2`
 - [x] UK module — verified & logged (3 UNVERIFIED, awaiting decision)
 - [x] CA module — verified & logged (6 links fixed, 0 flagged)
-- [ ] Remaining 7 jurisdictions (JP, CN, AU, KR, SG, BR, IN)
+- [x] JP module — verified & logged (0 issues; portal-precision note only)
+- [ ] Remaining 6 jurisdictions (CN, AU, KR, SG, BR, IN)
