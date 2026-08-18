@@ -352,6 +352,33 @@ curl but resolves in a browser.
 
 ---
 
+## India — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| IN-01.1 | IN | Medical Devices Rules, 2017 (CDSCO) | cdsco.gov.in | 2026-08-18 | RY | OK |
+| IN-01.2 | IN | Cyber expectations emerging; CDSCO references IMDRF | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| IN-02.1 | IN | ISO 14971-aligned risk mgmt in device master file | iso.org 14971 | 2026-08-18 | RY | OK¹ |
+| IN-02.2 | IN | SaMD classification under Medical Devices Rules, 2017 | cdsco.gov.in | 2026-08-18 | RY | OK |
+| IN-02.3 | IN | Connected devices document data security; guidance developing | cdsco.gov.in | 2026-08-18 | RY | OK |
+| IN-03.1 | IN | No dedicated SBOM mandate yet; reuse FDA/EU inventory | cdsco.gov.in | 2026-08-18 | RY | OK |
+| IN-03.2 | IN | Vulnerability coordination via CERT-In | cert-in.org.in | 2026-08-18 | RY | OK |
+| IN-04.1 | IN | MvPI adverse-event reporting covers cyber safety events | cdsco.gov.in (404) | 2026-08-18 | RY | FLAG |
+| IN-04.2 | IN | Health-data devices must account for DPDP Act 2023 | meity.gov.in | 2026-08-18 | RY | OK |
+| IN-R1 | IN | Medical Devices Rules, 2017 (CDSCO) | cdsco.gov.in | 2026-08-18 | RY | OK |
+| IN-R2 | IN | Materiovigilance Programme of India (MvPI) | cdsco.gov.in (404) | 2026-08-18 | RY | FLAG |
+| IN-R3 | IN | CERT-In (national CERT) | cert-in.org.in | 2026-08-18 | RY | OK |
+| IN-R4 | IN | Digital Personal Data Protection Act, 2023 (MeitY) | meity.gov.in | 2026-08-18 | RY | OK |
+
+**India summary:** 13 items — 9 OK, 2 OK¹ (IMDRF index + ISO 14971), 2 FLAG
+(MvPI link 404, IN-04.1 / IN-R2). 0 UNVERIFIED, 0 pulled. cdsco.gov.in
+(medical devices), cert-in.org.in and meity.gov.in return 200. India's clause
+text is appropriately hedged ("lighter and still emerging", "no dedicated SBOM
+mandate yet", "still developing"), which verifies as accurate. Same optional
+IMDRF-index repoint note (IN-01.2) as JP/KR/SG.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -427,6 +454,20 @@ cyber-specific standard is a different one (e.g. the YY/T network-security
 series). Recommend Director confirm and either correct the description or swap
 to the correct standard number. Not changed unilaterally (substantive citation).
 
+**IN — MvPI link 404 (IN-04.1, IN-R2): FLAG, awaiting Director decision.** The
+Materiovigilance Programme of India links point to
+`cdsco.gov.in/opencms/opencms/en/Materiovigilance/`, which now returns 404.
+Unlike the other broken links this session, MvPI's home is not simply relocated
+within the same site — its **National Coordination Centre is the Indian
+Pharmacopoeia Commission (IPC)**, a different authority than CDSCO. Repointing to
+`ipc.gov.in` (or the NHSRC MvPI page,
+`nhsrcindia.org/hc-technology/materiovigilance-programme-of-india`) changes the
+citing authority/domain, so per D-003 §5 it is flagged, not switched
+unilaterally. The programme and the claim remain valid; only the link needs a
+decision. Options: (a) repoint to the IPC MvPI page, (b) repoint to the NHSRC
+MvPI page, (c) mark "unverified — pending review" via the badge. Held for
+Director.
+
 ---
 
 ## Progress
@@ -441,4 +482,17 @@ to the correct standard number. Not changed unilaterally (substantive citation).
 - [x] KR module — verified & logged (0 issues; IMDRF-repoint note only)
 - [x] SG module — verified & logged (1 link fixed, 0 flagged)
 - [x] BR module — verified & logged (2 Notivisa links fixed, 0 flagged)
-- [ ] Remaining 1 jurisdiction (IN)
+- [x] IN module — verified & logged (2 FLAG: MvPI link 404 / authority change)
+- [x] **ALL 11 JURISDICTIONS VERIFIED & LOGGED** (D-005 §3 complete)
+
+## Open flags awaiting Director decision (as of all-11 completion)
+
+- **CN-02.2** — "GB/T 42062 (medical device cybersecurity)" mis-described (it is
+  the ISO 14971 risk-management adoption). Correct description or swap standard.
+- **IN-04.1 / IN-R2** — MvPI link 404; correct home is IPC/NHSRC (different
+  authority). Choose repoint target or badge as unverified.
+- **UK-01.2 / UK-02.1 / UK-R2** — remain UNVERIFIED (dead MHRA guidance);
+  already badged on the live page per D-004 §1 / D-005 §1.
+- **Optional (non-blocking):** repoint remaining IMDRF-index links (KR-02.2/R3,
+  SG-02.2, IN-01.2, plus the cross-cutting standards card) to the specific N60
+  PDF as done for JP; and JP precision notes (N73 for SBOM, N70 for legacy).
