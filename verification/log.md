@@ -246,6 +246,34 @@ cyber guiding-principles document has no stable standalone English URL). CAC
 
 ---
 
+## Australia — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| AU-01.1 | AU | Therapeutic Goods (Medical Devices) Regulations 2002 (TGA) | legislation.gov.au | 2026-08-18 | RY | OK |
+| AU-01.2 | AU | TGA Medical device cyber security guidance for industry | tga.gov.au cyber guidance | 2026-08-18 | RY | FIXED |
+| AU-02.1 | AU | Essential Principle 12.1 (software/IT network security) | tga.gov.au cyber guidance | 2026-08-18 | RY | FIXED |
+| AU-02.2 | AU | ISO 14971 must incorporate cybersecurity; risk summary in tech file | iso.org 14971 | 2026-08-18 | RY | OK¹ |
+| AU-02.3 | AU | Software/AI devices under TGA SaMD framework | tga.gov.au SaMD | 2026-08-18 | RY | FIXED |
+| AU-03.1 | AU | SBOM/inventory for third-party/OTS components | tga.gov.au cyber guidance | 2026-08-18 | RY | FIXED |
+| AU-03.2 | AU | CVD per ISO/IEC 29147/30111 + ACSC alignment | cyber.gov.au | 2026-08-18 | RY | OK¹ |
+| AU-04.1 | AU | Mandatory adverse-event reporting for cyber harm | tga.gov.au report-problem | 2026-08-18 | RY | FIXED |
+| AU-04.2 | AU | Postmarket monitoring/patching for connected devices | tga.gov.au cyber guidance | 2026-08-18 | RY | FIXED |
+| AU-R1 | AU | Therapeutic Goods (Medical Devices) Regulations 2002 | legislation.gov.au | 2026-08-18 | RY | OK |
+| AU-R2 | AU | TGA medical device cyber security guidance | tga.gov.au cyber guidance | 2026-08-18 | RY | FIXED |
+| AU-R3 | AU | TGA software-based medical devices (SaMD) | tga.gov.au SaMD | 2026-08-18 | RY | FIXED |
+| AU-R4 | AU | Australian Cyber Security Centre (ACSC) | cyber.gov.au | 2026-08-18 | RY | OK¹ |
+
+**Australia summary:** 13 items — 2 OK, 3 OK¹ (ISO 14971 + cyber.gov.au,
+browser-resolvable), 8 link occurrences FIXED (TGA site restructure; see
+Corrections). 0 UNVERIFIED, 0 flagged, 0 pulled. tga.gov.au and cyber.gov.au
+block automated requests (curl 000 / JS shell); the replacement TGA URLs are
+the current canonical pages confirmed via search result titles ("Complying with
+medical device cyber security requirements", "Understanding how we regulate
+software-based medical devices", "Report an adverse event or safety problem").
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -254,6 +282,9 @@ cyber guiding-principles document has no stable standalone English URL). CAC
 | EU MDCG (×6) | health.ec.europa.eu/medical-devices-sector/guidance-mdcg-endorsed-documents-and-other-guidance_en | health.ec.europa.eu/document/download/b23b362f-8a56-434c-922a-5b3ca4d0a7a1_en | EC restructured the guidance index (404); replaced with the specific MDCG 2019-16 Rev.1 document, which is more precise per D-001 §6 |
 | UK Yellow Card (UK-04.1) | gov.uk/guidance/report-a-problem-with-a-medicine-or-medical-device | gov.uk/report-problem-medicine-medical-device | gov.uk retired the old slug; current MHRA "Report a problem with a medicine or medical device" page |
 | CA HC cyber guidance (×6) | canada.ca/…/guidance-documents/pre-market-requirements-medical-device-cyber-security.html | canada.ca/…/guidance-documents/cybersecurity/document.html | Same guidance document (Pre-market Requirements for Medical Device Cybersecurity), relocated by Health Canada |
+| AU TGA cyber guidance (×5) | tga.gov.au/resources/resource/guidance/medical-device-cyber-security-guidance-industry | tga.gov.au/resources/guidance/complying-medical-device-cyber-security-requirements | TGA site restructure (dropped /resource/ path); same industry cyber-guidance |
+| AU TGA SaMD (×2) | tga.gov.au/how-we-regulate/manufacturing/software-based-medical-devices | tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices | TGA site restructure; same software-based-device guidance |
+| AU TGA reporting (×1) | tga.gov.au/safety/safety-monitoring-and-signals/reporting-problems | tga.gov.au/safety/report-problem/report-adverse-event-or-safety-problem | TGA site restructure; current report-a-problem page |
 
 ---
 
@@ -326,4 +357,5 @@ to the correct standard number. Not changed unilaterally (substantive citation).
 - [x] CA module — verified & logged (6 links fixed, 0 flagged)
 - [x] JP module — verified & logged; IMDRF repointed to N60 (D-005 §2)
 - [x] CN module — verified & logged (1 FLAG: GB/T 42062 description)
-- [ ] Remaining 5 jurisdictions (AU, KR, SG, BR, IN)
+- [x] AU module — verified & logged (8 TGA links fixed, 0 flagged)
+- [ ] Remaining 4 jurisdictions (KR, SG, BR, IN)
