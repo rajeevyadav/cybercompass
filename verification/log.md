@@ -217,6 +217,35 @@ PDF URL is IMDRF's canonical final-document path, browser-resolvable.
 
 ---
 
+## China — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| CN-01.1 | CN | Regulations on Supervision & Admin of Medical Devices (NMPA) | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-01.2 | CN | NMPA Guiding Principles for Cybersecurity Registration Review | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-02.1 | CN | Cyber technical documentation at registration | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-02.2 | CN | Cyber risk analysis referencing "GB/T 42062" alongside ISO 14971 | iso.org 14971 | 2026-08-18 | RY | FLAG |
+| CN-02.3 | CN | AI/SaMD devices under NMPA AI review pathway | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-02.4 | CN | PIPL + cross-border data transfer for health data | cac.gov.cn | 2026-08-18 | RY | OK |
+| CN-03.1 | CN | Software component inventory in registration dossier | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-03.2 | CN | Vulnerability handling via CNVD coordination | cnvd.org.cn | 2026-08-18 | RY | OK¹ |
+| CN-04.1 | CN | Adverse-event reporting extends to cyber safety events | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-04.2 | CN | Material network/connectivity changes need a change filing | nmpa.gov.cn (portal) | 2026-08-18 | RY | OK |
+| CN-R1 | CN | NMPA — medical device regulation | nmpa.gov.cn | 2026-08-18 | RY | OK |
+| CN-R2 | CN | Cyberspace Administration of China (PIPL) | cac.gov.cn | 2026-08-18 | RY | OK |
+| CN-R3 | CN | CNVD national vulnerability database | cnvd.org.cn | 2026-08-18 | RY | OK¹ |
+| CN-R4 | CN | ISO 14971:2019 | iso.org | 2026-08-18 | RY | OK¹ |
+
+**China summary:** 14 items — 10 OK, 3 OK¹ (CNVD captcha-gated + ISO 14971
+CDN-blocked, both browser-resolvable), 1 FLAG (CN-02.2 standard description).
+0 broken links, 0 UNVERIFIED, 0 pulled. NMPA English portal is used for the
+registration/guiding-principles clauses — acceptable per D-001 §6 (China's
+cyber guiding-principles document has no stable standalone English URL). CAC
+(cac.gov.cn) and NMPA (english.nmpa.gov.cn) return 200; CNVD is captcha-gated
+(title "本站开启了验证码保护") — a live site, browser-resolvable.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -277,6 +306,16 @@ guidance at a fixed URL. These three items remain **UNVERIFIED** in this log.
 to "17.2/17.4"; status of the citation aspect cleared. (UK-02.1 remains
 UNVERIFIED for the separate dead-link issue above.)
 
+**CN — standard description (CN-02.2): FLAG, awaiting Director decision.** The
+clause says cyber risk analysis should "reference the national standard **GB/T
+42062 (medical device cybersecurity)** alongside ISO 14971." GB/T 42062-2022 is
+China's *risk-management* standard — the national adoption of ISO 14971 —
+**not** a cybersecurity standard, so (a) the parenthetical description is wrong
+and (b) citing it "alongside ISO 14971" is redundant. China's medical-device
+cyber-specific standard is a different one (e.g. the YY/T network-security
+series). Recommend Director confirm and either correct the description or swap
+to the correct standard number. Not changed unilaterally (substantive citation).
+
 ---
 
 ## Progress
@@ -285,5 +324,6 @@ UNVERIFIED for the separate dead-link issue above.)
 - [x] EU module — verified & logged (commit `9fbc725`); citation fix `f6e34d2`
 - [x] UK module — verified & logged (3 UNVERIFIED, awaiting decision)
 - [x] CA module — verified & logged (6 links fixed, 0 flagged)
-- [x] JP module — verified & logged (0 issues; portal-precision note only)
-- [ ] Remaining 6 jurisdictions (CN, AU, KR, SG, BR, IN)
+- [x] JP module — verified & logged; IMDRF repointed to N60 (D-005 §2)
+- [x] CN module — verified & logged (1 FLAG: GB/T 42062 description)
+- [ ] Remaining 5 jurisdictions (AU, KR, SG, BR, IN)
