@@ -40,6 +40,9 @@ exists"). Such corrections are listed under **Corrections applied** below.
   held for Director decision (see **Flags** section).
 - **OK²** — a previously-flagged citation was corrected under a directive
   and re-verified.
+- **UNVERIFIED** — source link is dead and/or the claim cannot be confirmed
+  against a current primary source; marked "unverified — pending review"
+  per D-001 §6. Not silently repointed — held for Director decision.
 
 ---
 
@@ -122,12 +125,40 @@ Device Regulation", "…2024/2847…", "…2024/1689…", "…2016/679 … gdpr"
 
 ---
 
+## United Kingdom — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| UK-01.1 | UK | UK MDR 2002 (SI 2002/618) in force; MHRA competent authority | legislation.gov.uk | 2026-08-18 | RY | OK |
+| UK-01.2 | UK | "MHRA guidance on medical device cybersecurity sets premarket/lifecycle expectations" | gov.uk (404) | 2026-08-18 | RY | UNVERIFIED |
+| UK-01.3 | UK | NHS software under DCB0129/DCB0160 clinical safety standards | digital.nhs.uk | 2026-08-18 | RY | OK¹ |
+| UK-02.1 | UK | Secure-by-design "mirror EU GSPR 17.2/17.3"; document IT controls | gov.uk (404) | 2026-08-18 | RY | UNVERIFIED |
+| UK-02.2 | UK | ISO 14971 + DCB0129 Clinical Safety Case / Hazard Log | digital.nhs.uk | 2026-08-18 | RY | OK¹ |
+| UK-02.3 | UK | MHRA Software & AI as a Medical Device change programme | gov.uk | 2026-08-18 | RY | OK |
+| UK-03.1 | UK | Software inventory (SBOM-equiv.) per NCSC supply-chain expectations | ncsc.gov.uk | 2026-08-18 | RY | OK |
+| UK-03.2 | UK | CVD referencing ISO/IEC 29147/30111 | iso.org 29147 | 2026-08-18 | RY | OK¹ |
+| UK-04.1 | UK | FSCA + Yellow Card vigilance reporting for cyber safety risks | gov.uk Yellow Card | 2026-08-18 | RY | FIXED |
+| UK-04.2 | UK | DCB0160 ongoing clinical risk duties on deploying org | digital.nhs.uk | 2026-08-18 | RY | OK¹ |
+| UK-R1 | UK | UK Medical Devices Regulations 2002 (SI 2002/618) | legislation.gov.uk | 2026-08-18 | RY | OK |
+| UK-R2 | UK | MHRA medical device cybersecurity guidance | gov.uk (404) | 2026-08-18 | RY | UNVERIFIED |
+| UK-R3 | UK | DCB0129 / DCB0160 (NHS Digital) | digital.nhs.uk | 2026-08-18 | RY | OK¹ |
+| UK-R4 | UK | Software and AI as a Medical Device Programme (MHRA) | gov.uk | 2026-08-18 | RY | OK |
+| UK-R5 | UK | NCSC supply chain security guidance | ncsc.gov.uk | 2026-08-18 | RY | OK |
+
+**UK summary:** 15 items — 6 OK, 5 OK¹ (CDN-blocked canonical URLs),
+1 FIXED (Yellow Card, UK-04.1), 3 UNVERIFIED (UK-01.2, UK-02.1, UK-R2 —
+dead MHRA-cyber-guidance link; see Flags). 0 clauses pulled (held pending
+review). UK-02.1 additionally carries the MDR §17.2/17.3 citation issue.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
 |---|---|---|---|
 | US PCCP (×3: US-02.5, US-04.4, US-R5) | fda.gov/…/predetermined-change-control-plans-machine-learning-enabled-medical-devices | fda.gov/…/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence | ML-specific PCCP page removed; superseded by the final Dec 2024 AI-enabled PCCP guidance |
 | EU MDCG (×6) | health.ec.europa.eu/medical-devices-sector/guidance-mdcg-endorsed-documents-and-other-guidance_en | health.ec.europa.eu/document/download/b23b362f-8a56-434c-922a-5b3ca4d0a7a1_en | EC restructured the guidance index (404); replaced with the specific MDCG 2019-16 Rev.1 document, which is more precise per D-001 §6 |
+| UK Yellow Card (UK-04.1) | gov.uk/guidance/report-a-problem-with-a-medicine-or-medical-device | gov.uk/report-problem-medicine-medical-device | gov.uk retired the old slug; current MHRA "Report a problem with a medicine or medical device" page |
 
 ---
 
@@ -154,14 +185,35 @@ flag set: the AI-Act-overlay clause text reads "…apply in addition to
 Per D-003 §5 it is left unchanged and flagged rather than silently
 corrected. Recommended fix (on sign-off): "17.2/17.3" → "17.2/17.4".
 
-**Pre-flag for UK module (not yet verified).** A fifth occurrence exists in
-the UK module ("mirror EU GSPR **17.2/17.3** in substance"). It will be
-assessed and flagged when the UK jurisdiction is verified.
+**UK — dead MHRA cybersecurity-guidance link (UK-01.2, UK-02.1, UK-R2):
+UNVERIFIED, awaiting Director decision.** The page links "MHRA guidance on
+medical device cybersecurity" to
+`gov.uk/government/publications/medical-devices-cyber-security`, which now
+returns a genuine 404 ("Page not found - GOV.UK"). Searches indicate MHRA
+has **no current standalone published medical-device cybersecurity guidance
+document** at a stable gov.uk URL (a dedicated SaMD cybersecurity guidance
+was still forthcoming as of 2025). Because both the link *and* the
+underlying claim are affected, this is not a clean broken-link fix. Options
+for Director:
+  (a) remove the two MHRA-cyber-guidance clauses (UK-01.2, UK-02.1) and the
+      UK-R2 reference;
+  (b) repoint to a defensible substitute (e.g. NCSC guidance, the MHRA
+      Software & AI programme, or the UK PMS regulations 2024) with the
+      clause text softened to match what that source actually says;
+  (c) mark "unverified — pending review" on the live page until MHRA
+      publishes dedicated guidance.
+Held unchanged pending sign-off (D-003 §5). No substitute applied.
+
+**UK — MDR §17.2/17.3 citation (UK-02.1): FLAG.** The clause says secure-by
+-design "mirror EU GSPR **17.2/17.3** in substance." Same imprecision as the
+resolved EU items — should be **17.2/17.4**. Grouped with the EU-02.5 flag
+for a single sign-off; not corrected yet.
 
 ---
 
 ## Progress
 
 - [x] US module — verified & logged (commit `d317df4`)
-- [x] EU module — verified & logged
-- [ ] Remaining 9 jurisdictions (UK, CA, JP, CN, AU, KR, SG, BR, IN)
+- [x] EU module — verified & logged (commit `9fbc725`); citation fix `f6e34d2`
+- [x] UK module — verified & logged (3 UNVERIFIED, awaiting decision)
+- [ ] Remaining 8 jurisdictions (CA, JP, CN, AU, KR, SG, BR, IN)
