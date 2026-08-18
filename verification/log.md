@@ -149,8 +149,8 @@ Device Regulation", "…2024/2847…", "…2024/1689…", "…2016/679 … gdpr"
 1 FIXED (Yellow Card, UK-04.1), 3 UNVERIFIED (UK-01.2, UK-02.1, UK-R2 —
 dead MHRA-cyber-guidance link; see Flags). 0 clauses pulled (held pending
 review). UK-02.1's MDR §17.2/17.3 citation was corrected to §17.2/17.4 under
-D-004 §2; it remains UNVERIFIED only for the separate dead-link issue. Live-page
-"unverified" marking is pending a UI directive (see Flags).
+D-004 §2; it remains UNVERIFIED only for the separate dead-link issue, now shown
+on the live page via the `.unverified` badge (D-005 §1).
 
 ---
 
@@ -256,15 +256,13 @@ source that doesn't say what the clause claims (worse than an honest flag), and
 removal would understate MHRA's posture. Revisit if MHRA publishes stable
 guidance at a fixed URL. These three items remain **UNVERIFIED** in this log.
 
-> **⚠️ FLAGGED BACK — no live-page UI exists for this status.** D-004 §1 asks
-> me to confirm the page already renders "unverified — pending review" in a way
-> visually distinct from a normal sourced clause (not just a tooltip). It does
-> **not**: there is no clause-level "unverified" treatment in the current
-> markup/CSS (the only pending styling is a *country-level* `.status-pending`
-> badge, unused since all 11 are "Populated"). Per the directive I am **not**
-> building new UI without a directive — the live-page marking for UK-01.2 /
-> UK-02.1 / UK-R2 is therefore **not yet applied**; awaiting a UI directive.
-> The dead link remains on the page until then, recorded here.
+> **✅ RESOLVED under D-005 §1.** A reusable clause-level `.unverified` badge
+> ("⚠ UNVERIFIED — PENDING REVIEW", using the existing `--warn` token, styled
+> distinctly from `.src-link`) was built and applied to UK-01.2, UK-02.1 and
+> UK-R2. The dead MHRA link was removed from the page in favour of the badge —
+> 0 dead MHRA URLs remain. Commit `da15cd1`. These three items stay UNVERIFIED
+> in this log until MHRA publishes stable guidance; the badge makes that status
+> visible to end users.
 
 **UK — MDR §17.2/17.3 citation (UK-02.1): RESOLVED under D-004 §2.** Corrected
 to "17.2/17.4"; status of the citation aspect cleared. (UK-02.1 remains
