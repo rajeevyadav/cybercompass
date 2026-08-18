@@ -325,6 +325,33 @@ IMDRF-index repoint note as JP/KR applies to SG-02.2.
 
 ---
 
+## Brazil — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| BR-01.1 | BR | RDC framework for medical devices (ANVISA) | gov.br/anvisa | 2026-08-18 | RY | OK |
+| BR-01.2 | BR | RDC 657/2022 SaMD regulation covers cyber documentation | gov.br/anvisa legislação | 2026-08-18 | RY | OK¹ |
+| BR-02.1 | BR | Technical docs for connected devices: data security/access control | gov.br/anvisa legislação | 2026-08-18 | RY | OK¹ |
+| BR-02.2 | BR | ISO 14971 as harmonized baseline in ANVISA requirements | iso.org 14971 | 2026-08-18 | RY | OK¹ |
+| BR-02.3 | BR | Health-data devices must satisfy LGPD | gov.br/anpd | 2026-08-18 | RY | OK |
+| BR-03.1 | BR | Software-component documentation for third-party/OSS | gov.br/anvisa legislação | 2026-08-18 | RY | OK¹ |
+| BR-03.2 | BR | Vulnerability coordination via CERT.br | cert.br | 2026-08-18 | RY | OK |
+| BR-04.1 | BR | Notivisa reporting extends to cyber safety events | gov.br/anvisa e-Notivisa | 2026-08-18 | RY | FIXED |
+| BR-04.2 | BR | Postmarket monitoring for connected devices | gov.br/anvisa legislação | 2026-08-18 | RY | OK¹ |
+| BR-R1 | BR | ANVISA — medical device regulation (RDC framework) | gov.br/anvisa | 2026-08-18 | RY | OK |
+| BR-R2 | BR | ANVISA legislation index (software/SaMD) | gov.br/anvisa legislação | 2026-08-18 | RY | OK¹ |
+| BR-R3 | BR | Notivisa adverse-event reporting system | gov.br/anvisa e-Notivisa | 2026-08-18 | RY | FIXED |
+| BR-R4 | BR | ANPD (LGPD data-protection authority) | gov.br/anpd | 2026-08-18 | RY | OK |
+
+**Brazil summary:** 13 items — 5 OK, 6 OK¹ (ANVISA legislation index +
+ISO 14971; gov.br is Cloudflare-gated to automated tools, browser-resolvable),
+2 FIXED (Notivisa system page retired → current e-Notivisa page, browser-title
+"e-Notivisa"). 0 UNVERIFIED, 0 flagged, 0 pulled. gov.br/anvisa (home) and
+gov.br/anpd return 200; the legislation index returns a Cloudflare challenge to
+curl but resolves in a browser.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -337,6 +364,7 @@ IMDRF-index repoint note as JP/KR applies to SG-02.2.
 | AU TGA SaMD (×2) | tga.gov.au/how-we-regulate/manufacturing/software-based-medical-devices | tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices | TGA site restructure; same software-based-device guidance |
 | AU TGA reporting (×1) | tga.gov.au/safety/safety-monitoring-and-signals/reporting-problems | tga.gov.au/safety/report-problem/report-adverse-event-or-safety-problem | TGA site restructure; current report-a-problem page |
 | SG HSA safety (SG-04.1) | hsa.gov.sg/medical-devices/safety-information | hsa.gov.sg/medical-devices/adverse-events | HSA retired the safety-information slug; current medical-device adverse-events reporting page |
+| BR Notivisa (×2: BR-04.1, BR-R3) | gov.br/anvisa/pt-br/sistemas/notivisa | gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/notificacoes/e-notivisa | ANVISA retired the /sistemas/notivisa path; current e-Notivisa page (browser title "e-Notivisa") |
 
 ---
 
@@ -412,4 +440,5 @@ to the correct standard number. Not changed unilaterally (substantive citation).
 - [x] AU module — verified & logged (8 TGA links fixed, 0 flagged)
 - [x] KR module — verified & logged (0 issues; IMDRF-repoint note only)
 - [x] SG module — verified & logged (1 link fixed, 0 flagged)
-- [ ] Remaining 2 jurisdictions (BR, IN)
+- [x] BR module — verified & logged (2 Notivisa links fixed, 0 flagged)
+- [ ] Remaining 1 jurisdiction (IN)
