@@ -152,6 +152,31 @@ review). UK-02.1 additionally carries the MDR §17.2/17.3 citation issue.
 
 ---
 
+## Canada — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| CA-01.1 | CA | Medical Devices Regulations (SOR/98-282) under Food and Drugs Act | justice.gc.ca | 2026-08-18 | RY | OK |
+| CA-01.2 | CA | HC Pre-market Requirements for Medical Device Cybersecurity guidance | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-02.1 | CA | Cyber risk assessment w/ ISO 14971; architecture/threat analysis in licence app | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-02.2 | CA | Cyber test summary (pen test, vuln scan) for higher-risk classes | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-02.3 | CA | SaMD/ML expectations align with HC ML-enabled guidance | canada.ca guidance index | 2026-08-18 | RY | OK |
+| CA-03.1 | CA | SBOM/software inventory for third-party/OTS components | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-03.2 | CA | CVD referencing ISO/IEC 29147/30111 | iso.org 29147 | 2026-08-18 | RY | OK¹ |
+| CA-04.1 | CA | Mandatory problem reporting for serious-impact cyber issues | justice.gc.ca | 2026-08-18 | RY | OK |
+| CA-04.2 | CA | Ongoing postmarket vuln monitoring / notification for connected devices | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-R1 | CA | Medical Devices Regulations (SOR/98-282) | justice.gc.ca | 2026-08-18 | RY | OK |
+| CA-R2 | CA | Pre-market Requirements for Medical Device Cybersecurity (HC) | canada.ca cyber guidance | 2026-08-18 | RY | FIXED |
+| CA-R3 | CA | Medical device guidance document index (HC) | canada.ca | 2026-08-18 | RY | OK |
+
+**Canada summary:** 12 items — 5 OK, 1 OK¹ (CDN-blocked canonical URL),
+6 link occurrences FIXED (HC cybersecurity guidance relocated; spanning
+CA-01.2/02.1/02.2/03.1/04.2/R2). 0 UNVERIFIED, 0 flagged, 0 pulled.
+canada.ca blocks automated (curl) requests entirely — all canada.ca URLs
+were browser-confirmed by page title.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -159,6 +184,7 @@ review). UK-02.1 additionally carries the MDR §17.2/17.3 citation issue.
 | US PCCP (×3: US-02.5, US-04.4, US-R5) | fda.gov/…/predetermined-change-control-plans-machine-learning-enabled-medical-devices | fda.gov/…/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence | ML-specific PCCP page removed; superseded by the final Dec 2024 AI-enabled PCCP guidance |
 | EU MDCG (×6) | health.ec.europa.eu/medical-devices-sector/guidance-mdcg-endorsed-documents-and-other-guidance_en | health.ec.europa.eu/document/download/b23b362f-8a56-434c-922a-5b3ca4d0a7a1_en | EC restructured the guidance index (404); replaced with the specific MDCG 2019-16 Rev.1 document, which is more precise per D-001 §6 |
 | UK Yellow Card (UK-04.1) | gov.uk/guidance/report-a-problem-with-a-medicine-or-medical-device | gov.uk/report-problem-medicine-medical-device | gov.uk retired the old slug; current MHRA "Report a problem with a medicine or medical device" page |
+| CA HC cyber guidance (×6) | canada.ca/…/guidance-documents/pre-market-requirements-medical-device-cyber-security.html | canada.ca/…/guidance-documents/cybersecurity/document.html | Same guidance document (Pre-market Requirements for Medical Device Cybersecurity), relocated by Health Canada |
 
 ---
 
@@ -216,4 +242,5 @@ for a single sign-off; not corrected yet.
 - [x] US module — verified & logged (commit `d317df4`)
 - [x] EU module — verified & logged (commit `9fbc725`); citation fix `f6e34d2`
 - [x] UK module — verified & logged (3 UNVERIFIED, awaiting decision)
-- [ ] Remaining 8 jurisdictions (CA, JP, CN, AU, KR, SG, BR, IN)
+- [x] CA module — verified & logged (6 links fixed, 0 flagged)
+- [ ] Remaining 7 jurisdictions (JP, CN, AU, KR, SG, BR, IN)
