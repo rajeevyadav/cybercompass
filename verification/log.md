@@ -38,6 +38,8 @@ exists"). Such corrections are listed under **Corrections applied** below.
 - **FIXED** — link returned 404; corrected during this pass (see below).
 - **FLAG** — substance accurate, but a sub-clause citation is imprecise;
   held for Director decision (see **Flags** section).
+- **OK²** — a previously-flagged citation was corrected under a directive
+  and re-verified.
 
 ---
 
@@ -82,18 +84,18 @@ exists"). Such corrections are listed under **Corrections applied** below.
 
 | Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
 |---|---|---|---|---|---|---|
-| EU-01.1 | EU | MDR Annex I GSPR "17.2 and 17.3" — IT security & unauthorised-access protection | eur-lex 2017/745 | 2026-08-18 | RY | FLAG |
+| EU-01.1 | EU | MDR Annex I GSPR "17.2 and 17.4" — IT security & unauthorised-access protection | eur-lex 2017/745 | 2026-08-18 | RY | OK² |
 | EU-01.2 | EU | MDCG 2019-16 rev.1 — Guidance on Cybersecurity (state of the art) | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
 | EU-01.3 | EU | CRA (EU) 2024/2847 overlay; defined interface with MDR/IVDR | eur-lex 2024/2847 | 2026-08-18 | RY | OK |
 | EU-02.1 | EU | Secure design/manufacture (state of the art); IT security documented | eur-lex 2017/745 | 2026-08-18 | RY | OK |
 | EU-02.2 | EU | ISO 14971 must incorporate cybersecurity as a risk source | iso.org 14971 | 2026-08-18 | RY | OK¹ |
 | EU-02.3 | EU | Technical docs describe minimum IT requirements | eur-lex 2017/745 (Annex II) | 2026-08-18 | RY | OK |
 | EU-02.4 | EU | Auth/access control must not undermine safe use (human factors) | iso.org 62366-1 | 2026-08-18 | RY | OK |
-| EU-02.5 | EU | AI Act overlay: high-risk AI Art 6(1), Art 15 cybersecurity | eur-lex 2024/1689 | 2026-08-18 | RY | OK |
+| EU-02.5 | EU | AI Act overlay: high-risk AI Art 6(1), Art 15 cybersecurity (clause text also cites "GSPR 17.2/17.3") | eur-lex 2024/1689 | 2026-08-18 | RY | FLAG |
 | EU-02.6 | EU | Class IIb/III life-sustaining: deeper NB cyber scrutiny | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
 | EU-02.7 | EU | Active implantable telemetry under GSPR 17.2 | eur-lex 2017/745 | 2026-08-18 | RY | OK |
 | EU-03.1 | EU | MDCG expects software-component inventory (SBOM-equivalent) | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
-| EU-03.2 | EU | Integrity/authenticity of software & data verifiable (cites §17.3) | eur-lex 2017/745 | 2026-08-18 | RY | FLAG |
+| EU-03.2 | EU | Integrity/authenticity of software & data verifiable (now §17.4) | eur-lex 2017/745 | 2026-08-18 | RY | OK² |
 | EU-03.3 | EU | Vuln handling per ISO/IEC 29147/30111 | iso.org 29147 | 2026-08-18 | RY | OK¹ |
 | EU-03.4 | EU | Health-data devices: cross-ref GDPR Art 32 | eur-lex 2016/679 | 2026-08-18 | RY | OK |
 | EU-04.1 | EU | PMS plan must capture cybersecurity signals (Art 83–86) | eur-lex 2017/745 | 2026-08-18 | RY | OK |
@@ -101,16 +103,18 @@ exists"). Such corrections are listed under **Corrections applied** below.
 | EU-04.3 | EU | FSCAs may be triggered by unmitigated critical vulns (Art 89) | eur-lex 2017/745 | 2026-08-18 | RY | OK |
 | EU-04.4 | EU | NB reassessment where cyber posture materially changes | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
 | EU-04.5 | EU | Class III implantables: telemetry-specific PMS monitoring | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
-| EU-R1 | EU | Regulation (EU) 2017/745 (MDR) — "Annex I §17.2/17.3" | eur-lex | 2026-08-18 | RY | FLAG |
+| EU-R1 | EU | Regulation (EU) 2017/745 (MDR) — "Annex I §17.2/17.4" | eur-lex | 2026-08-18 | RY | OK² |
 | EU-R2 | EU | MDCG 2019-16 rev.1 — Cybersecurity guidance | ec.europa.eu | 2026-08-18 | RY | FIXED |
 | EU-R3 | EU | Cyber Resilience Act (EU) 2024/2847 | eur-lex | 2026-08-18 | RY | OK |
 | EU-R4 | EU | EU AI Act (EU) 2024/1689 | eur-lex | 2026-08-18 | RY | OK |
 | EU-R5 | EU | GDPR (EU) 2016/679, Art 32 | eur-lex | 2026-08-18 | RY | OK |
 | EU-R6 | EU | ISO 14971:2019 | iso.org | 2026-08-18 | RY | OK¹ |
 
-**EU summary:** 25 items — 13 OK, 3 OK¹ (CDN-blocked canonical URLs),
-6 link occurrences FIXED (MDCG, spanning EU-01.2/02.6/03.1/04.4/04.5/R2),
-3 FLAG (MDR sub-clause citation — see Flags). 0 unverifiable. No clause pulled.
+**EU summary (updated D-003):** 25 items — 12 OK, 3 OK¹ (CDN-blocked
+canonical URLs), 3 OK² (MDR §17.3→§17.4 citation corrected & re-verified:
+EU-01.1/03.2/R1), 6 link occurrences FIXED (MDCG, spanning
+EU-01.2/02.6/03.1/04.4/04.5/R2), 1 FLAG (EU-02.5 — newly found, awaiting
+sign-off). 0 unverifiable. No clause pulled.
 
 EUR-Lex `/eli/reg/...` URLs return `202`/interstitial to automated requests
 but were browser-confirmed (page titles: "Regulation - 2017/745 … Medical
@@ -131,10 +135,10 @@ Device Regulation", "…2024/2847…", "…2024/1689…", "…2016/679 … gdpr"
 
 **US:** none.
 
-**EU — MDR Annex I sub-clause citation imprecision (EU-01.1, EU-03.2, EU-R1).**
-The page cites MDR Annex I **§17.3** in the context of IT security /
-protection against unauthorised access / software integrity. The precise
-mapping is:
+**EU — MDR Annex I §17.3 → §17.4 (EU-01.1, EU-03.2, EU-R1): RESOLVED under
+D-003.** Approved and applied; the three citations now read §17.4 (or
+§17.2/§17.4). Status updated to OK². Reference mapping retained for the
+record:
 
 - §17.2 — software developed to the state of the art incl. *information
   security*, verification and validation;
@@ -143,11 +147,16 @@ mapping is:
 - §17.4 — **minimum IT security measures, including protection against
   unauthorised access**.
 
-So "IT security and protection against unauthorised access" is **§17.2 and
-§17.4**, not §17.2/§17.3. The substance of each clause is correct; only the
-sub-clause number is wrong. Recommended fix: change the three "§17.3"
-citations to "§17.4" (or "§17.2/§17.4"). Held pending a directive, since a
-clause-text change is beyond a broken-link correction.
+**EU — NEW, awaiting Director sign-off (EU-02.5).** While applying the D-003
+fix, a fourth same-issue occurrence surfaced that was **not** in the R-002
+flag set: the AI-Act-overlay clause text reads "…apply in addition to
+**GSPR 17.2/17.3**." By the mapping above this should be **17.2/17.4**.
+Per D-003 §5 it is left unchanged and flagged rather than silently
+corrected. Recommended fix (on sign-off): "17.2/17.3" → "17.2/17.4".
+
+**Pre-flag for UK module (not yet verified).** A fifth occurrence exists in
+the UK module ("mirror EU GSPR **17.2/17.3** in substance"). It will be
+assessed and flagged when the UK jurisdiction is verified.
 
 ---
 
