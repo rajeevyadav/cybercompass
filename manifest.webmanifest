@@ -1,0 +1,18 @@
+{
+  "name": "CyberCompass — Medtech Cybersecurity Requirements Navigator",
+  "short_name": "CyberCompass",
+  "description": "Free, offline medtech cybersecurity requirements navigator covering 11 jurisdictions. Every clause links to its primary source. No AI, no data collection.",
+  "start_url": "index.html",
+  "scope": "./",
+  "id": "cybercompass",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "pwa-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "pwa-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "pwa-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "pwa-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

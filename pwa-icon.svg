@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="CyberCompass">
+  <!-- Full-bleed square (no rounded corners) so it works as a maskable PWA icon -->
+  <rect width="512" height="512" fill="#0a0d10"/>
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#ff7a1a" stroke-width="20"/>
+  <!-- north needle (brand orange) -->
+  <path d="M256 88 L312 256 L256 256 Z" fill="#ff7a1a"/>
+  <path d="M256 88 L200 256 L256 256 Z" fill="#ff7a1a" opacity="0.55"/>
+  <!-- south needle (muted) -->
+  <path d="M256 424 L312 256 L256 256 Z" fill="#8d97a2" opacity="0.55"/>
+  <path d="M256 424 L200 256 L256 256 Z" fill="#8d97a2" opacity="0.35"/>
+  <!-- hub -->
+  <circle cx="256" cy="256" r="22" fill="#0a0d10" stroke="#ff7a1a" stroke-width="13"/>
+  <!-- north tick -->
+  <line x1="256" y1="60" x2="256" y2="96" stroke="#ff7a1a" stroke-width="19"/>
+</svg>
