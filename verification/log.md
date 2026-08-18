@@ -301,6 +301,30 @@ not changed (D-005 §2 scoped the repoint to JP only).
 
 ---
 
+## Singapore — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| SG-01.1 | SG | Health Products Act + Medical Devices Regulations (HSA) | hsa.gov.sg | 2026-08-18 | RY | OK |
+| SG-01.2 | SG | HSA guidance docs (incl. cybersecurity), IMDRF-aligned | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
+| SG-02.1 | SG | Cyber risk documentation for connected devices in dossier | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
+| SG-02.2 | SG | ISO 14971 + IMDRF cybersecurity principles | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| SG-02.3 | SG | Standalone software/AI under HSA SaMD guidance | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
+| SG-03.1 | SG | Software-component inventory for third-party/OSS | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
+| SG-03.2 | SG | Vulnerability disclosure via SingCERT | csa.gov.sg/singcert | 2026-08-18 | RY | OK |
+| SG-04.1 | SG | Adverse-event reporting for cyber patient-harm | hsa.gov.sg adverse-events | 2026-08-18 | RY | FIXED |
+| SG-04.2 | SG | Postmarket vulnerability monitoring for connected devices | hsa.gov.sg guidance | 2026-08-18 | RY | OK |
+| SG-R1 | SG | Health Sciences Authority (HSA) | hsa.gov.sg | 2026-08-18 | RY | OK |
+| SG-R2 | SG | HSA guidance documents | hsa.gov.sg | 2026-08-18 | RY | OK |
+| SG-R3 | SG | SingCERT (Cyber Security Agency of Singapore) | csa.gov.sg | 2026-08-18 | RY | OK |
+
+**Singapore summary:** 12 items — 10 OK, 1 OK¹ (IMDRF index), 1 FIXED
+(SG-04.1 safety-information page retired → HSA adverse-events page). 0 UNVERIFIED,
+0 flagged, 0 pulled. All hsa.gov.sg and csa.gov.sg URLs return 200. Same optional
+IMDRF-index repoint note as JP/KR applies to SG-02.2.
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -312,6 +336,7 @@ not changed (D-005 §2 scoped the repoint to JP only).
 | AU TGA cyber guidance (×5) | tga.gov.au/resources/resource/guidance/medical-device-cyber-security-guidance-industry | tga.gov.au/resources/guidance/complying-medical-device-cyber-security-requirements | TGA site restructure (dropped /resource/ path); same industry cyber-guidance |
 | AU TGA SaMD (×2) | tga.gov.au/how-we-regulate/manufacturing/software-based-medical-devices | tga.gov.au/resources/guidance/understanding-how-we-regulate-software-based-medical-devices | TGA site restructure; same software-based-device guidance |
 | AU TGA reporting (×1) | tga.gov.au/safety/safety-monitoring-and-signals/reporting-problems | tga.gov.au/safety/report-problem/report-adverse-event-or-safety-problem | TGA site restructure; current report-a-problem page |
+| SG HSA safety (SG-04.1) | hsa.gov.sg/medical-devices/safety-information | hsa.gov.sg/medical-devices/adverse-events | HSA retired the safety-information slug; current medical-device adverse-events reporting page |
 
 ---
 
@@ -386,4 +411,5 @@ to the correct standard number. Not changed unilaterally (substantive citation).
 - [x] CN module — verified & logged (1 FLAG: GB/T 42062 description)
 - [x] AU module — verified & logged (8 TGA links fixed, 0 flagged)
 - [x] KR module — verified & logged (0 issues; IMDRF-repoint note only)
-- [ ] Remaining 3 jurisdictions (SG, BR, IN)
+- [x] SG module — verified & logged (1 link fixed, 0 flagged)
+- [ ] Remaining 2 jurisdictions (BR, IN)
