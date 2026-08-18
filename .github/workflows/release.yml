@@ -1,0 +1,47 @@
+name: Build desktop installers
+
+# Builds and publishes the desktop installers to the GitHub Release that
+# triggered this run. Windows: NSIS Setup.exe + Portable.exe; macOS: .dmg;
+# Linux: .AppImage. Binaries are attached to the Release, never committed.
+#
+# Matrix jobs are independent (fail-fast: false) so Windows can publish even
+# if mac/linux fail.
+#
+# NOTE (D-006 §4): currently MANUAL (workflow_dispatch) only. Auto-build on
+# every published Release is intentionally NOT enabled yet — that would
+# auto-publish UNSIGNED installers on every tag, which the Director should sign
+# off on first. To enable it later, uncomment the `release:` trigger below.
+# The v0.1.0 Windows installer was built locally and attached to the release.
+
+on:
+  workflow_dispatch:
+  # release:
+  #   types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Assemble www/
+        run: npm run make-www
+
+      - name: Build & publish installers
+        run: npx --no-install electron-builder --publish always
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

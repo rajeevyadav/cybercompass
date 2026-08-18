@@ -14,6 +14,12 @@ D-[0-9]*.md
 *.local
 *.local.*
 
+# Desktop build outputs (installers publish to GitHub Releases, never committed)
+/node_modules/
+/www/
+/dist/
+package-lock.json
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db
