@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------------------
+# Internal process artifacts — NEVER commit to this PUBLIC repo.
+# Directives (D-NNN) and reports (R-NNN) contain internal decision-making and
+# must stay local only. This rule is a hard guardrail, not a preference.
+# ---------------------------------------------------------------------------
+/reports/
+/directives/
+R-[0-9]*.md
+D-[0-9]*.md
+
+# Local scratch / notes
+/scratch/
+/notes/
+*.local
+*.local.*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/
