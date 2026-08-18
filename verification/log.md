@@ -186,25 +186,34 @@ were browser-confirmed by page title.
 | JP-01.1 | JP | PMD Act; MHLW policy, PMDA review | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-01.2 | JP | MHLW/PMDA cyber notifications, IMDRF-aligned | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-02.1 | JP | Cyber risk assessment integrated with ISO 14971 | iso.org 14971 | 2026-08-18 | RY | OK¹ |
-| JP-02.2 | JP | Reference IMDRF N60 principles for premarket controls | imdrf.org (index) | 2026-08-18 | RY | OK |
-| JP-03.1 | JP | Software-component inventory per IMDRF SBOM principles | imdrf.org (index) | 2026-08-18 | RY | OK |
+| JP-02.2 | JP | Reference IMDRF N60 principles for premarket controls | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
+| JP-03.1 | JP | Software-component inventory per IMDRF SBOM principles | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 | JP-03.2 | JP | JPCERT/CC coordinates vuln disclosure with MHLW/PMDA | jpcert.or.jp | 2026-08-18 | RY | OK |
 | JP-04.1 | JP | Cyber incident reporting under PMD Act adverse-event framework | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-04.2 | JP | Postmarket vuln monitoring/patching per MHLW/PMDA notifications | pmda.go.jp (portal) | 2026-08-18 | RY | OK |
 | JP-R1 | JP | PMD Act (MHLW / PMDA) | pmda.go.jp | 2026-08-18 | RY | OK |
 | JP-R2 | JP | PMDA device review services | pmda.go.jp | 2026-08-18 | RY | OK |
-| JP-R3 | JP | IMDRF cybersecurity principles N60 / N70 | imdrf.org (index) | 2026-08-18 | RY | OK |
+| JP-R3 | JP | IMDRF cybersecurity principles N60 / N70 | imdrf.org N60 PDF | 2026-08-18 | RY | OK² |
 | JP-R4 | JP | JPCERT/CC | jpcert.or.jp | 2026-08-18 | RY | OK |
 
-**Japan summary:** 12 items — 11 OK, 1 OK¹ (ISO 14971, CDN-blocked canonical).
-0 broken links, 0 citation errors, 0 UNVERIFIED, 0 pulled. All PMDA/JPCERT/
-IMDRF URLs resolve (pmda.go.jp and jpcert.or.jp 200; imdrf.org browser-
-confirmed — blocks curl). PMDA and IMDRF links are portal/index pages, which
-is acceptable per D-001 §6 (Japan publishes no single stable English cyber
-document). **Optional precision note (not a blocker):** the IMDRF **N60/N70**
-guidance documents do have specific stable PDF URLs; JP-02.2/03.1/R3 could be
-repointed from the documents index to those exact PDFs on request — flagged,
-not changed unilaterally.
+**Japan summary (updated D-005 §2):** 12 items — 8 OK, 1 OK¹ (ISO 14971,
+CDN-blocked canonical), 3 OK² (IMDRF links repointed from the documents index
+to the specific **N60** final PDF: JP-02.2/03.1/R3). 0 broken links, 0 citation
+errors, 0 UNVERIFIED, 0 pulled. PMDA links remain portal pages (acceptable per
+D-001 §6 — Japan publishes no single stable English cyber document). imdrf.org
+serves an anti-bot shell to automated tools (curl 000, headless shell); the N60
+PDF URL is IMDRF's canonical final-document path, browser-resolvable.
+
+> **Two precision notes flagged for Director (not blockers):**
+> 1. **JP-03.1 is about SBOM** — the IMDRF document specifically on SBOM is
+>    **N73** ("Principles and Practices for SBOM for Medical Device
+>    Cybersecurity", 2023). It is currently pointed at N60 (the general
+>    principles doc, which does cover software components). Repoint JP-03.1 to
+>    **N73** for maximum precision? Flagged, not changed unilaterally.
+> 2. **N70** ("…Cybersecurity of Legacy Medical Devices") is not linked by any
+>    JP clause because none is legacy-specific, so only N60 was used despite the
+>    "N60 / N70" ref code. Add an N70 link (e.g. a legacy-device clause or on the
+>    JP-R3 ref row)? Flagged.
 
 ---
 
