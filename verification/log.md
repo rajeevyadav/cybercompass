@@ -94,7 +94,7 @@ exists"). Such corrections are listed under **Corrections applied** below.
 | EU-02.2 | EU | ISO 14971 must incorporate cybersecurity as a risk source | iso.org 14971 | 2026-08-18 | RY | OK¹ |
 | EU-02.3 | EU | Technical docs describe minimum IT requirements | eur-lex 2017/745 (Annex II) | 2026-08-18 | RY | OK |
 | EU-02.4 | EU | Auth/access control must not undermine safe use (human factors) | iso.org 62366-1 | 2026-08-18 | RY | OK |
-| EU-02.5 | EU | AI Act overlay: high-risk AI Art 6(1), Art 15 cybersecurity (clause text also cites "GSPR 17.2/17.3") | eur-lex 2024/1689 | 2026-08-18 | RY | FLAG |
+| EU-02.5 | EU | AI Act overlay: high-risk AI Art 6(1), Art 15 cybersecurity (citation now "GSPR 17.2/17.4") | eur-lex 2024/1689 | 2026-08-18 | RY | OK² |
 | EU-02.6 | EU | Class IIb/III life-sustaining: deeper NB cyber scrutiny | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
 | EU-02.7 | EU | Active implantable telemetry under GSPR 17.2 | eur-lex 2017/745 | 2026-08-18 | RY | OK |
 | EU-03.1 | EU | MDCG expects software-component inventory (SBOM-equivalent) | ec.europa.eu MDCG | 2026-08-18 | RY | FIXED |
@@ -114,10 +114,10 @@ exists"). Such corrections are listed under **Corrections applied** below.
 | EU-R6 | EU | ISO 14971:2019 | iso.org | 2026-08-18 | RY | OK¹ |
 
 **EU summary (updated D-003):** 25 items — 12 OK, 3 OK¹ (CDN-blocked
-canonical URLs), 3 OK² (MDR §17.3→§17.4 citation corrected & re-verified:
-EU-01.1/03.2/R1), 6 link occurrences FIXED (MDCG, spanning
-EU-01.2/02.6/03.1/04.4/04.5/R2), 1 FLAG (EU-02.5 — newly found, awaiting
-sign-off). 0 unverifiable. No clause pulled.
+canonical URLs), 4 OK² (MDR §17.3→§17.4 citation corrected & re-verified:
+EU-01.1/03.2/R1 under D-003, EU-02.5 under D-004), 6 link occurrences FIXED
+(MDCG, spanning EU-01.2/02.6/03.1/04.4/04.5/R2), 0 FLAG. 0 unverifiable.
+No clause pulled.
 
 EUR-Lex `/eli/reg/...` URLs return `202`/interstitial to automated requests
 but were browser-confirmed (page titles: "Regulation - 2017/745 … Medical
@@ -148,7 +148,9 @@ Device Regulation", "…2024/2847…", "…2024/1689…", "…2016/679 … gdpr"
 **UK summary:** 15 items — 6 OK, 5 OK¹ (CDN-blocked canonical URLs),
 1 FIXED (Yellow Card, UK-04.1), 3 UNVERIFIED (UK-01.2, UK-02.1, UK-R2 —
 dead MHRA-cyber-guidance link; see Flags). 0 clauses pulled (held pending
-review). UK-02.1 additionally carries the MDR §17.2/17.3 citation issue.
+review). UK-02.1's MDR §17.2/17.3 citation was corrected to §17.2/17.4 under
+D-004 §2; it remains UNVERIFIED only for the separate dead-link issue. Live-page
+"unverified" marking is pending a UI directive (see Flags).
 
 ---
 
@@ -204,12 +206,8 @@ record:
 - §17.4 — **minimum IT security measures, including protection against
   unauthorised access**.
 
-**EU — NEW, awaiting Director sign-off (EU-02.5).** While applying the D-003
-fix, a fourth same-issue occurrence surfaced that was **not** in the R-002
-flag set: the AI-Act-overlay clause text reads "…apply in addition to
-**GSPR 17.2/17.3**." By the mapping above this should be **17.2/17.4**.
-Per D-003 §5 it is left unchanged and flagged rather than silently
-corrected. Recommended fix (on sign-off): "17.2/17.3" → "17.2/17.4".
+**EU — EU-02.5 "GSPR 17.2/17.3" → "17.2/17.4": RESOLVED under D-004 §2.**
+Approved and applied; status now OK².
 
 **UK — dead MHRA cybersecurity-guidance link (UK-01.2, UK-02.1, UK-R2):
 UNVERIFIED, awaiting Director decision.** The page links "MHRA guidance on
@@ -219,21 +217,29 @@ returns a genuine 404 ("Page not found - GOV.UK"). Searches indicate MHRA
 has **no current standalone published medical-device cybersecurity guidance
 document** at a stable gov.uk URL (a dedicated SaMD cybersecurity guidance
 was still forthcoming as of 2025). Because both the link *and* the
-underlying claim are affected, this is not a clean broken-link fix. Options
-for Director:
-  (a) remove the two MHRA-cyber-guidance clauses (UK-01.2, UK-02.1) and the
-      UK-R2 reference;
-  (b) repoint to a defensible substitute (e.g. NCSC guidance, the MHRA
-      Software & AI programme, or the UK PMS regulations 2024) with the
-      clause text softened to match what that source actually says;
-  (c) mark "unverified — pending review" on the live page until MHRA
-      publishes dedicated guidance.
-Held unchanged pending sign-off (D-003 §5). No substitute applied.
+underlying claim are affected, this is not a clean broken-link fix.
 
-**UK — MDR §17.2/17.3 citation (UK-02.1): FLAG.** The clause says secure-by
--design "mirror EU GSPR **17.2/17.3** in substance." Same imprecision as the
-resolved EU items — should be **17.2/17.4**. Grouped with the EU-02.5 flag
-for a single sign-off; not corrected yet.
+**DECISION (D-004 §1): option (c)** — mark "unverified — pending review" on
+the live page; do **not** substitute a source or remove the clauses. Rationale
+(Director): the underlying claim (MHRA expects secure-by-design / cyber
+controls) is substantively true; citing NCSC or the SaMD-AI page would cite a
+source that doesn't say what the clause claims (worse than an honest flag), and
+removal would understate MHRA's posture. Revisit if MHRA publishes stable
+guidance at a fixed URL. These three items remain **UNVERIFIED** in this log.
+
+> **⚠️ FLAGGED BACK — no live-page UI exists for this status.** D-004 §1 asks
+> me to confirm the page already renders "unverified — pending review" in a way
+> visually distinct from a normal sourced clause (not just a tooltip). It does
+> **not**: there is no clause-level "unverified" treatment in the current
+> markup/CSS (the only pending styling is a *country-level* `.status-pending`
+> badge, unused since all 11 are "Populated"). Per the directive I am **not**
+> building new UI without a directive — the live-page marking for UK-01.2 /
+> UK-02.1 / UK-R2 is therefore **not yet applied**; awaiting a UI directive.
+> The dead link remains on the page until then, recorded here.
+
+**UK — MDR §17.2/17.3 citation (UK-02.1): RESOLVED under D-004 §2.** Corrected
+to "17.2/17.4"; status of the citation aspect cleared. (UK-02.1 remains
+UNVERIFIED for the separate dead-link issue above.)
 
 ---
 
