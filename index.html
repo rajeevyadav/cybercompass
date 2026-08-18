@@ -6,11 +6,11 @@
   Last verified commit: 0c129d9 (D-005 — all 11 jurisdictions verified)
   Directive: D-001 — brand icon + reading-contrast pass
 -->
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0a0d10">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
 <meta name="description" content="CyberCompass — free, offline medtech cybersecurity requirements navigator covering US, EU, UK, Canada, Japan, China, Australia, South Korea, Singapore, Brazil, and India. Every clause links to its primary source. No AI, no data collection.">
@@ -1287,7 +1287,7 @@
   }
 
   const saved = localStorage.getItem('cybercompass-theme');
-  applyTheme(saved === 'light' ? 'light' : 'dark');
+  applyTheme(saved === 'dark' ? 'dark' : 'light');
 
   themeBtn.addEventListener('click', () => {
     applyTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
