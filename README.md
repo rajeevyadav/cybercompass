@@ -1,5 +1,12 @@
 # CyberCompass
 
+[![Latest release](https://img.shields.io/github/v/release/rajeevyadav/cybercompass?label=version&color=2ea44f&cacheSeconds=300)](https://github.com/rajeevyadav/cybercompass/releases/latest)
+[![Download for Windows](https://img.shields.io/badge/Download-Windows%20installer-0078d6?logo=windows)](https://github.com/rajeevyadav/cybercompass/releases/latest/download/CyberCompass-Setup.exe)
+[![Open the app](https://img.shields.io/badge/Open-web%20%2F%20mobile%20app-8250df)](https://rajeevyadav.github.io/cybercompass/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
+_Last updated: **2026-08-18** · Next regulatory review: **2026-11-18** (see [NEXT_REVIEW.md](NEXT_REVIEW.md))_
+
 **Medtech Cybersecurity Requirements Navigator** — a free, offline,
 source-linked reference mapping medical-device cybersecurity obligations across
 the 11 jurisdictions with the deepest medtech regulatory footprint.
