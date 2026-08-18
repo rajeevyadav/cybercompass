@@ -93,8 +93,7 @@ loads the **same** `index.html` served on the web (assembled into `www/` by
 
 Maintainer: **Rajeev Yadav** · rajeevyadav@gmail.com
 
-License: see [`LICENSE`](LICENSE). _(License selection is being finalized; until
-a `LICENSE` file is added, all rights are reserved by default.)_
+License: **MIT** — see [`LICENSE`](LICENSE).
 
 ## Contributing
 
