@@ -274,6 +274,33 @@ software-based medical devices", "Report an adverse event or safety problem").
 
 ---
 
+## South Korea — verified 2026-08-18 · verifier RY
+
+| Clause | Jurisdiction | Clause (summary) | Link | Verified | Verifier | Status |
+|---|---|---|---|---|---|---|
+| KR-01.1 | KR | Medical Devices Act (MFDS) | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-01.2 | KR | MFDS cybersecurity review guidance, IMDRF-aligned | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-02.1 | KR | Cyber risk assessment + security architecture for connected approvals | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-02.2 | KR | ISO 14971 + IMDRF principles for evaluation consistency | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+| KR-02.3 | KR | AI/SaMD under MFDS digital medical device pathway | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-03.1 | KR | Software-component inventory for third-party/OSS | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-03.2 | KR | Vulnerability coordination via KISA | kisa.or.kr | 2026-08-18 | RY | OK |
+| KR-04.1 | KR | Adverse-event reporting extends to cyber safety events | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-04.2 | KR | Monitoring + patch management for connected devices | mfds.go.kr (portal) | 2026-08-18 | RY | OK |
+| KR-R1 | KR | Ministry of Food and Drug Safety (MFDS) | mfds.go.kr | 2026-08-18 | RY | OK |
+| KR-R2 | KR | Korea Internet & Security Agency (KISA) | kisa.or.kr | 2026-08-18 | RY | OK |
+| KR-R3 | KR | IMDRF cybersecurity principles N60 / N70 | imdrf.org (index) | 2026-08-18 | RY | OK¹ |
+
+**South Korea summary:** 12 items — 10 OK, 2 OK¹ (IMDRF index, anti-bot shell to
+automated tools, browser-resolvable). 0 broken links, 0 UNVERIFIED, 0 pulled.
+MFDS English portal used for the Act/guidance clauses (acceptable per D-001 §6;
+mfds.go.kr and kisa.or.kr both return 200). **Optional note (not a blocker):**
+KR-02.2 and KR-R3 point to the IMDRF documents index; they could be repointed to
+the specific N60 PDF like Japan (JP, D-005 §2) if the Director wants — flagged,
+not changed (D-005 §2 scoped the repoint to JP only).
+
+---
+
 ## Corrections applied (broken links, HTTP 404 → corrected)
 
 | Where | Old URL (404) | New URL (200) | Reason |
@@ -358,4 +385,5 @@ to the correct standard number. Not changed unilaterally (substantive citation).
 - [x] JP module — verified & logged; IMDRF repointed to N60 (D-005 §2)
 - [x] CN module — verified & logged (1 FLAG: GB/T 42062 description)
 - [x] AU module — verified & logged (8 TGA links fixed, 0 flagged)
-- [ ] Remaining 4 jurisdictions (KR, SG, BR, IN)
+- [x] KR module — verified & logged (0 issues; IMDRF-repoint note only)
+- [ ] Remaining 3 jurisdictions (SG, BR, IN)
