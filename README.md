@@ -96,6 +96,13 @@ The desktop app is a thin [Electron](https://www.electronjs.org/) wrapper that
 loads the **same** `index.html` served on the web (assembled into `www/` by
 `scripts/make-www.js`) — there is no forked copy of the content.
 
+## Family
+
+Part of the same family — same guardrails, same offline-first, no-black-box-AI philosophy:
+[RegCompass](https://rajeevyadav.github.io/regcompass/) ·
+[eIFUCompass](https://rajeevyadav.github.io/eifucompass/) ·
+[ClinicalCompass](https://rajeevyadav.github.io/clinicalcompass/).
+
 ## License & contact
 
 Maintainer: **Rajeev Yadav** · rajeevyadav@gmail.com
