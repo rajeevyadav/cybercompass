@@ -1,5 +1,7 @@
 # CyberCompass
 
+**Medtech Cybersecurity Requirements Navigator — 11 jurisdictions**
+
 [![Latest release](https://img.shields.io/github/v/release/rajeevyadav/cybercompass?label=version&color=2ea44f&cacheSeconds=300)](https://github.com/rajeevyadav/cybercompass/releases/latest)
 [![Download for Windows](https://img.shields.io/badge/Download-Windows%20installer-0078d6?logo=windows)](https://github.com/rajeevyadav/cybercompass/releases/latest/download/CyberCompass-Setup.exe)
 [![Open the app](https://img.shields.io/badge/Open-web%20%2F%20mobile%20app-8250df)](https://rajeevyadav.github.io/cybercompass/)
@@ -7,94 +9,88 @@
 
 _Last updated: **2026-08-18** · Next regulatory review: **2026-11-18** (see [NEXT_REVIEW.md](NEXT_REVIEW.md))_
 
-**Medtech Cybersecurity Requirements Navigator** — a free, offline,
-source-linked reference mapping medical-device cybersecurity obligations across
-the 11 jurisdictions with the deepest medtech regulatory footprint.
+🌐 **Use it now in your browser: https://rajeevyadav.github.io/cybercompass/**
 
-🌐 **Use it now: https://rajeevyadav.github.io/cybercompass/**
+CyberCompass is a free, offline, source-linked reference that maps medical-device
+cybersecurity obligations across the 11 jurisdictions with the deepest medtech regulatory
+footprint. It runs entirely in your browser, works offline once loaded, and transmits
+nothing — every clause links directly to its primary official source. Deterministic and
+fully auditable: **no AI in the content**.
 
-It runs entirely in your browser, works offline once loaded, and transmits
-nothing. Every clause links directly to its primary official source.
+## Features
 
----
-
-## What CyberCompass is — and isn't
-
-CyberCompass is a **decision-support reference**. It helps you navigate and
-compare cybersecurity requirements and find the primary source fast.
-
-It is **not**:
-
-- regulatory or legal advice;
-- a way to *create* or *demonstrate* compliance;
-- a replacement for review by a regulatory agency, Notified Body, or legal
-  counsel.
-
-Content is paraphrased for navigation and may contain errors or omissions.
-**Always verify against the linked primary source** before relying on any
-clause for a submission. Provided "as is", without warranty of any kind.
-
-## No AI inside
-
-The shipped page and its build tooling contain **no AI, machine-learning, or
-third-party assistant code**. Every clause is fixed, human-written, and fully
-auditable in this repository's source. There are no telemetry or external API
-calls at runtime — the page makes zero network requests of its own; the only
-outbound links are the ones you click to reach a primary source.
+- **11 jurisdictions, one taxonomy** — every jurisdiction is broken down the same four
+  ways: legal basis · premarket requirements · SBOM / vulnerability handling · postmarket
+  obligations.
+- **Device-profile filter** — dims the clauses that don't apply to your device (risk class,
+  connectivity, SaMD/AI, PHI/PII, life-sustaining, implantable).
+- **Primary-source links** — every clause links straight to the statute, regulation, or
+  guidance it rests on.
+- **Runs anywhere** — light/dark, installable PWA, works fully offline.
 
 ## Coverage
 
-**11 jurisdictions:** United States · European Union · United Kingdom · Canada ·
-Japan · China · Australia · South Korea · Singapore · Brazil · India.
+**11 jurisdictions:** United States · European Union · United Kingdom · Canada · Japan ·
+China · Australia · South Korea · Singapore · Brazil · India.
 
-**4-category taxonomy** — every jurisdiction is broken down the same way:
+Content is paraphrased for navigation and may contain errors or omissions. It is a
+decision-support reference — not regulatory or legal advice — and does not create or
+demonstrate compliance. Always verify against the linked primary source before relying on
+any clause for a submission.
 
-1. **Legal basis** — the statute/regulation and its cybersecurity hook.
-2. **Premarket requirements** — what must be documented/demonstrated before market.
-3. **SBOM / vulnerability handling** — software inventory and coordinated disclosure.
-4. **Postmarket obligations** — monitoring, patching, and incident reporting.
+## How to use
 
-A **device-profile filter** dims clauses that don't apply to your device
-(risk class, connectivity, SaMD/AI, PHI/PII, life-sustaining, implantable).
+1. Open the app (browser, installed PWA, or the Windows desktop build).
+2. Set your device profile — risk class, connectivity, SaMD/AI, PHI/PII, life-sustaining,
+   implantable — to dim the clauses that don't apply.
+3. Browse a jurisdiction across the four categories; click any clause to reach its primary
+   source.
 
-## How to use it — every platform
+## Run & build
 
-- **Any browser** (phone, tablet, desktop, any OS): open
-  https://rajeevyadav.github.io/cybercompass/
-- **Install as an app (PWA):** in desktop Chrome/Edge use the install icon in
-  the address bar; on iOS/Android use **Share → Add to Home Screen**. Once
-  installed it works fully offline.
-- **Windows desktop app:** download **CyberCompass-Setup.exe** (or the portable
-  build) from the [latest release](https://github.com/rajeevyadav/cybercompass/releases/latest).
-  The installer is currently **unsigned** — on the Windows SmartScreen prompt
-  choose **"More info → Run anyway"**, and verify the download came from
-  `github.com/rajeevyadav/cybercompass`.
-  - _macOS and Linux builds are configured but not yet published — this README
-    will list them once they are real._
+A static single-page app (no build step for the web version) with an optional
+[Electron](https://www.electronjs.org/) desktop wrapper that loads the same `index.html`
+(assembled into `www/` by `scripts/make-www.js` — no forked copy of the content).
+
+```bash
+# run the web app locally (a service worker needs http, not file://)
+npx serve .            # or:  python3 -m http.server
+
+# run the desktop app
+npm install
+npm start
+
+# build the desktop installers
+npm run dist:win       # Windows (NSIS installer + portable)
+npm run dist:mac       # macOS (.dmg)
+npm run dist:linux     # Linux (.AppImage)
+```
+
+The Windows installer is currently **unsigned** — on the SmartScreen prompt choose
+**"More info → Run anyway"**, and confirm the download came from
+`github.com/rajeevyadav/cybercompass`.
+
+## No AI inside
+
+The shipped page and its build tooling contain **no AI or machine-learning code** —
+every result is produced by fixed, human-written rules you can read in this repository's
+source. The app runs entirely on your device, works offline, and transmits nothing. CI
+guardrails fail the build if an AI-provider reference, an ML dependency, or an AI/bot
+commit-authorship trailer is ever introduced.
 
 ## Verification
 
-Every clause and link is verified against its primary source. The full
-clause-by-clause audit trail lives in
-[`/verification/log.md`](verification/log.md) (jurisdiction · clause ID · link ·
-verified date · verifier · status).
+Every citation and link is checked against its primary official source; the audit trail
+lives in [`verification/log.md`](verification/log.md). Sources move over time, so a lighter
+review runs quarterly — see [`NEXT_REVIEW.md`](NEXT_REVIEW.md) (next due **2026-11-18**,
+synchronised across the family). No silent edits — every change is reviewed and logged.
 
-Sources move over time, so a **lighter review runs quarterly** — see
-[`NEXT_REVIEW.md`](NEXT_REVIEW.md) (next due **2026-11-18**). Every change is
-reviewed and logged — there are no silent edits.
+## Disclaimer
 
-## Building the desktop app yourself
-
-```bash
-npm install
-npm run dist:win     # Windows (NSIS installer + portable)
-npm run dist:mac     # macOS (.dmg)
-npm run dist:linux   # Linux (.AppImage)
-```
-
-The desktop app is a thin [Electron](https://www.electronjs.org/) wrapper that
-loads the **same** `index.html` served on the web (assembled into `www/` by
-`scripts/make-www.js`) — there is no forked copy of the content.
+Decision-support and educational only — provided "as is", without warranty of any kind.
+CyberCompass does not constitute regulatory or legal advice, does not create compliance,
+and does not replace agency, Notified Body, or counsel review. Always verify against the
+linked primary source before relying on any clause for a submission.
 
 ## Family
 
@@ -103,13 +99,8 @@ Part of the same family — same guardrails, same offline-first, no-black-box-AI
 [eIFUCompass](https://rajeevyadav.github.io/eifucompass/) ·
 [ClinicalCompass](https://rajeevyadav.github.io/clinicalcompass/).
 
-## License & contact
+## License
+
+MIT — see [`LICENSE`](LICENSE).
 
 Maintainer: **Rajeev Yadav** · rajeevyadav@gmail.com
-
-License: **MIT** — see [`LICENSE`](LICENSE).
-
-## Contributing
-
-This is currently a single-committer repository. See
-[`CONTRIBUTING.md`](CONTRIBUTING.md) for the standing guardrail notes.
