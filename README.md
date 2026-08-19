@@ -80,8 +80,8 @@ clause-by-clause audit trail lives in
 verified date · verifier · status).
 
 Sources move over time, so a **lighter review runs quarterly** — see
-[`NEXT_REVIEW.md`](NEXT_REVIEW.md) (next due **2026-11-18**). Any change is
-directive-gated; there are no silent edits.
+[`NEXT_REVIEW.md`](NEXT_REVIEW.md) (next due **2026-11-18**). Every change is
+reviewed and logged — there are no silent edits.
 
 ## Building the desktop app yourself
 
